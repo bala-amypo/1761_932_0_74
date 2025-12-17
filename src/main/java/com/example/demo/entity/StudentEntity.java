@@ -18,11 +18,11 @@ public class StudentEntity {
     public StudentEntity(Long id,String name,String email,float cgpa){
         this.id=id;
         this.name=name;
-        this.email=emaikl;
+        this.email=;
         this.cgpa=cgpa;
     }
     public StudentEntity(){
-        
+
     }
 
     public void setName(String name){
