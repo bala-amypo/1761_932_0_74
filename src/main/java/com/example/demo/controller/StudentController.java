@@ -29,7 +29,7 @@ public class StudentController {
     }
 
     @GetMapping("/getStudents"/{id})
-    public StudentEntity getStudentsById(@PathVariable long id){
+    public StudentEntity getStudentsById(@PathVariable Long id){
         return ser.getStudentsById(id);
     }
 }
