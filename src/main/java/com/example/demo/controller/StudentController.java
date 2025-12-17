@@ -26,6 +26,7 @@ public class StudentController {
     public List<StudentEntity> getStudents(){
         return ser.getStudents();
     }
+    
     @GetMapping("/getStudents"/{id})
     public StudentEntity getStudentsById(@PathVariable long id){
         return ser.getStudentsById(id);
