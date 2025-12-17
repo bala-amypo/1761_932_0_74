@@ -11,4 +11,6 @@ public interface StudentService {
 
     public StudentEntity getStudentsById(Long id);
 
+    public StudentEntity deleteStudentById(Long id);
+
 }

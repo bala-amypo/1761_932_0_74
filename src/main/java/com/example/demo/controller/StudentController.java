@@ -33,7 +33,8 @@ public class StudentController {
         return ser.getStudentsById(id);
     }
     @DeleteMapping("/deleteStudent"/{id})
-    public StudentEntity deleteStudentById(@PathVariable Long id){
-        
+    public String deleteStudentById(@PathVariable Long id){
+        StudentEntity student=ser.getStudentsById(id);
+        if(student.present)
     }
 }

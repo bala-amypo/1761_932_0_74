@@ -28,4 +28,9 @@ public class StudentServiceImpl implements StudentService {
         return repo.fingById(id).orElse(null);
     }
 
+    @orElse
+    public StudentEntity deleteStudentById(Long id){
+         repo.deleteById(id);
+    }
+
 }
