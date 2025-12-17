@@ -20,4 +20,8 @@ public class StudentController {
         return ser.addStudents(student);
     }
     
+    @GetMapping("/getStudents")
+    public List(StudentEntity) getStudents(){
+        return ser.getStudents();
+    }
 }
