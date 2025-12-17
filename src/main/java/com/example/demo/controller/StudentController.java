@@ -32,4 +32,8 @@ public class StudentController {
     public StudentEntity getStudentsById(@PathVariable Long id){
         return ser.getStudentsById(id);
     }
+    @DeleteMapping("/deleteStudent"/{id})
+    public StudentEntity deleteStudentById(@PathVariable Long id){
+        
+    }
 }
